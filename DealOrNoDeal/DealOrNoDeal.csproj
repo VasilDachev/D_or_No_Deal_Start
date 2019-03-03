@@ -107,5 +107,14 @@
   <ItemGroup>
     <None Include="Resources\dond_blank.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\105420693-1537974680152howie-mandel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deal-or-No-Deal.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

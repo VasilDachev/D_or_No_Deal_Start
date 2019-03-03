@@ -22,15 +22,8 @@ namespace DealOrNoDeal
 
         Random rnd = new Random();
         readonly string filePath = "highscore.txt";
-        
-
-        List<int> number = new List<int>();
-        List<int> list = new List<int>();
-
         int[] arrGeneratedNubmers = new int[26];
-        //int[] Boxes = new int[]{1,5,10,15,25,50,75,100,200,300,400,500,750,1000,5000,10000,25000,50000,75000,100000,200000,300000,400000,500000,750000,1000000};
         int[] arrBoxes = new int[26];
-
         int tmp; //Задържа случайно генерираните стойности, докато ги напъхам в масив.
         int myBox; // За да запазя стойността на избраната кутия в отедлна променлива.
         int BoxIndicator; //Брояч да завъртя стойностите из масива (не знам защо не направих цикъл, така ми дойде, така ще стои!!!)
@@ -39,7 +32,32 @@ namespace DealOrNoDeal
         int Swapping = 3418431;//Сбора от всички суми.
         int Highscore;
         string Player;
-        int UntilOfferCount = 6;
+        int Sum1 = 1;
+        int Sum2 = 5;
+        int Sum3 = 10;
+        int Sum4 = 15;
+        int Sum5 = 25;
+        int Sum6 = 50;
+        int Sum7 = 75;
+        int Sum8 = 100;
+        int Sum9 = 200;
+        int Sum10 = 300;
+        int Sum11 = 400;
+        int Sum12 = 500;
+        int Sum13 = 750;
+        int Sum14 = 1000;
+        int Sum15 = 5000;
+        int Sum16 = 10000;
+        int Sum17 = 25000;
+        int Sum18 = 50000;
+        int Sum19 = 75000;
+        int Sum20 = 100000;
+        int Sum21 = 200000;
+        int Sum22 = 300000;
+        int Sum23 = 400000;
+        int Sum24 = 500000;
+        int Sum25 = 750000;
+        int Sum26 = 1000000;
 
         // 3..2..1..Старт!
         private void btnStartGame_Click(object sender, EventArgs e)
@@ -65,17 +83,9 @@ namespace DealOrNoDeal
                 {
                     tmp = rnd.Next(1,27);
                 }
-                arrGeneratedNubmers[i] = tmp;
-                    
+                arrGeneratedNubmers[i] = tmp;    
             }
-
-            
-
             DistributingBoxes();
-
-          
-
-
         }
 
         //Проверка за неповтарящи се случайни числа.
@@ -92,6 +102,7 @@ namespace DealOrNoDeal
             }
             return false;
         }
+        
         //Изчистване на всичко до начален стадий.
         private void btnResetGame_Click(object sender, EventArgs e)
         {
@@ -100,7 +111,6 @@ namespace DealOrNoDeal
             BoxesInvisible();                               //Reset ...!
             lbLeftSums.Items.Clear();
             lbRightSums.Items.Clear();
-            
             Array.Clear(arrGeneratedNubmers, 0, 26);
             lblWonSum.Visible = false;
             lblYouWon.Visible = false;
@@ -117,11 +127,52 @@ namespace DealOrNoDeal
             tbPlayerName.Visible = false;
             tbPlayerName.Text = "";
             Highscore = 0;
-           
-            UntilOfferCount = 6;
         }
-     
-       
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (res == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void aboutMeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutMeForm aboutme = new AboutMeForm();
+            aboutme.ShowDialog();
+        }
+
+        private void checkHighscoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HighscoreForm highscore = new HighscoreForm();
+            highscore.ShowDialog();
+        }
+
+        private void btnSubmitScore_Click(object sender, EventArgs e)
+        {
+            if (tbPlayerName.Text.Trim() != "")
+            {
+                Player = tbPlayerName.Text;
+
+                // tbPlayerName.Text = "";
+                using (FileStream fs = new FileStream(filePath, FileMode.Append))
+                {
+                    using (StreamWriter sw = new StreamWriter(fs))
+                    {
+                        sw.WriteLine(Highscore.ToString() + "$" + "  <->  " + Player);
+                    }
+                }
+                tbPlayerName.Visible = false;
+                btnSubmitScore.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Enter your name!");
+            }
+        }
 
         //Кликове(Captain obvious)
 
@@ -141,7 +192,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[1].ToString() + " $ ");
             btnBox2.Visible = false;
             BoxIndicator = 1;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[1];
             Banker();
@@ -153,20 +204,19 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[2].ToString() + " $ ");
             btnBox3.Visible = false;
             BoxIndicator = 2;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[2];
             Banker();
             EndingGame();
         }
-       
 
         private void btnBox4_Click(object sender, EventArgs e)
         {
             MessageBox.Show(arrBoxes[3].ToString() + " $ ");
             btnBox4.Visible = false;
             BoxIndicator = 3;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[3];
             Banker();
@@ -178,7 +228,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[4].ToString()+ " $ ");
             btnBox5.Visible = false;
             BoxIndicator = 4;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[4];
             Banker();
@@ -190,7 +240,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[5].ToString() + " $ ");
             btnBox6.Visible = false;
             BoxIndicator = 5;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[5];
             Banker();
@@ -202,7 +252,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[6].ToString() + " $ ");
             btnBox7.Visible = false;
             BoxIndicator = 6;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[6];
             Banker();
@@ -214,7 +264,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[7].ToString() + " $ ");
             btnBox8.Visible = false;
             BoxIndicator = 7;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[7];
             Banker();
@@ -226,7 +276,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[8].ToString() + " $ ");
             btnBox9.Visible = false;
             BoxIndicator = 8;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[8];
             Banker();
@@ -238,7 +288,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[9].ToString() + " $ ");
             btnBox10.Visible = false;
             BoxIndicator = 9;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[9];
             Banker();
@@ -250,7 +300,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[10].ToString() + " $ ");
             btnBox11.Visible = false;
             BoxIndicator = 10;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[10];
             Banker();
@@ -262,7 +312,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[11].ToString() + " $ ");
             btnBox12.Visible = false;
             BoxIndicator = 11;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[11];
             Banker();
@@ -274,7 +324,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[12].ToString() + " $ ");
             btnBox13.Visible = false;
             BoxIndicator = 12;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[12];
             Banker();
@@ -286,7 +336,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[13].ToString() + " $ ");
             btnBox14.Visible = false;
             BoxIndicator = 13;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[13];
             Banker();
@@ -298,7 +348,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[14].ToString() + " $ ");
             btnBox15.Visible = false;
             BoxIndicator = 14;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[14];
             Banker();
@@ -310,7 +360,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[15].ToString() + " $ ");
             btnBox16.Visible = false;
             BoxIndicator = 15;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[15];
             Banker();
@@ -322,7 +372,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[16].ToString() + " $ ");
             btnBox17.Visible = false;
             BoxIndicator = 16;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[16];
             Banker();
@@ -334,7 +384,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[17].ToString() + " $ ");
             btnBox18.Visible = false;
             BoxIndicator = 17;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[17];
             Banker();
@@ -346,7 +396,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[18].ToString() + " $ ");
             btnBox19.Visible = false;
             BoxIndicator = 18;
-            UntilOffer();
+           
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[18];
             Banker();
@@ -358,7 +408,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[19].ToString() + " $ ");
             btnBox20.Visible = false;
             BoxIndicator = 19;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[19];
             Banker();
@@ -370,7 +420,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[20].ToString() + " $ ");
             btnBox21.Visible = false;
             BoxIndicator = 20;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[20];
             Banker();
@@ -382,7 +432,7 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[21].ToString() + " $ ");
             btnBox22.Visible = false;
             BoxIndicator = 21;
-            UntilOffer();
+            
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[21];
             Banker();
@@ -394,7 +444,6 @@ namespace DealOrNoDeal
             MessageBox.Show(arrBoxes[22].ToString() + " $ ");
             btnBox23.Visible = false;
             BoxIndicator = 22;
-            UntilOffer();
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[22];
             Banker();
@@ -407,7 +456,7 @@ namespace DealOrNoDeal
             btnBox24.Visible = false;
             BoxIndicator = 23;
             MethodForRemovingSumsFromList();
-            UntilOffer();
+            
             Swapping -= arrBoxes[23];
             Banker();
             EndingGame();
@@ -419,7 +468,7 @@ namespace DealOrNoDeal
             btnBox25.Visible = false;
             BoxIndicator = 24;
             MethodForRemovingSumsFromList();
-            UntilOffer();
+            
             Swapping -= arrBoxes[24];
             Banker();
             EndingGame();
@@ -432,7 +481,7 @@ namespace DealOrNoDeal
             BoxIndicator = 25;
             MethodForRemovingSumsFromList();
             Swapping -= arrBoxes[25];
-            UntilOffer();
+            
             Banker();
             
             EndingGame();
@@ -451,6 +500,7 @@ namespace DealOrNoDeal
             if (BankerTimer1 == 0)
             {
                 Offer = offCalcEarlyGame / 20;
+                pbMan.Visible = true;
                 DialogResult res1 = MessageBox.Show("Your offer is: " + Offer.ToString() + "$", "Deal or No deal", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (res1 == DialogResult.Yes)
                 {
@@ -462,12 +512,18 @@ namespace DealOrNoDeal
                     btnSubmitScore.Visible = true;
                     tbPlayerName.Visible = true;
                     Highscore = Offer;
+                    pbMan.Visible = false;
+                }
+                else
+                {
+                    pbMan.Visible = false;
                 }
             }
             if (BankerTimer1 == -5)
             {
 
                 Offer = offCalcEarlyGame / 15;
+                pbMan.Visible = true;
                 DialogResult res2 = MessageBox.Show("Your offer is: " + Offer.ToString() + "$", "Deal or No deal", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (res2 == DialogResult.Yes)
                 {
@@ -479,12 +535,17 @@ namespace DealOrNoDeal
                     btnSubmitScore.Visible = true;
                     tbPlayerName.Visible = true;
                     Highscore = Offer;
+                    pbMan.Visible = false;
                 }
-
+                else
+                {
+                    pbMan.Visible = false;
+                }
             }
             if (BankerTimer1 == -9)
             {
                 Offer = offCalcEarlyGame / 11;
+                pbMan.Visible = true;
                 DialogResult res3 = MessageBox.Show("Your offer is: " + Offer.ToString() + "$", "Deal or No deal", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (res3 == DialogResult.Yes)
                 {
@@ -496,11 +557,17 @@ namespace DealOrNoDeal
                     btnSubmitScore.Visible = true;
                     tbPlayerName.Visible = true;
                     Highscore = Offer;
+                    pbMan.Visible = false;
+                }
+                else
+                {
+                    pbMan.Visible = false;
                 }
             }
             if (BankerTimer1 == -12)
             {
                 Offer = offCalcEarlyGame / 8;
+                pbMan.Visible = true;
                 DialogResult res4 = MessageBox.Show("Your offer is: " + Offer.ToString() + "$", "Deal or No deal", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (res4 == DialogResult.Yes)
                 {
@@ -512,11 +579,17 @@ namespace DealOrNoDeal
                     btnSubmitScore.Visible = true;
                     tbPlayerName.Visible = true;
                     Highscore = Offer;
+                    pbMan.Visible = false;
+                }
+                else
+                {
+                    pbMan.Visible = false;
                 }
             }
             if (BankerTimer1 == -14)
             {
                 Offer = offCalcEndGame / 6;
+                pbMan.Visible = true;
                 DialogResult res5 = MessageBox.Show("Your offer is: " + Offer.ToString() + "$", "Deal or No deal", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (res5 == DialogResult.Yes)
                 {
@@ -528,11 +601,17 @@ namespace DealOrNoDeal
                     btnSubmitScore.Visible = true;
                     tbPlayerName.Visible = true;
                     Highscore = Offer;
+                    pbMan.Visible = false;
+                }
+                else
+                {
+                    pbMan.Visible = false;
                 }
             }
             if (BankerTimer1 == -16)
             {
                 Offer = offCalcEndGame / 4;
+                pbMan.Visible = true;
                 DialogResult res6 = MessageBox.Show("Your offer is: " + Offer.ToString() + "$", "Deal or No deal", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (res6 == DialogResult.Yes)
                 {
@@ -544,11 +623,17 @@ namespace DealOrNoDeal
                     btnSubmitScore.Visible = true;
                     tbPlayerName.Visible = true;
                     Highscore = Offer;
+                    pbMan.Visible = false;
+                }
+                else
+                {
+                    pbMan.Visible = false;
                 }
             }
             if (BankerTimer1 == -17)
             {
                 Offer = offCalcEndGame / 3;
+                pbMan.Visible = true;
                 DialogResult res7 = MessageBox.Show("Your offer is: " + Offer.ToString() + "$", "Deal or No deal", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (res7 == DialogResult.Yes)
                 {
@@ -560,11 +645,17 @@ namespace DealOrNoDeal
                     btnSubmitScore.Visible = true;
                     tbPlayerName.Visible = true;
                     Highscore = Offer;
+                    pbMan.Visible = false;
+                }
+                else
+                {
+                    pbMan.Visible = false;
                 }
             }
             if (BankerTimer1 == -18)
             {
                 Offer = offCalcEndGame / 2;
+                pbMan.Visible = true;
                 DialogResult res8 = MessageBox.Show("Your offer is: " + Offer.ToString() + "$", "Deal or No deal", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (res8 == DialogResult.Yes)
                 {
@@ -576,10 +667,12 @@ namespace DealOrNoDeal
                     btnSubmitScore.Visible = true;
                     tbPlayerName.Visible = true;
                     Highscore = Offer;
+                    pbMan.Visible = false;
                 }
                 if (res8 == DialogResult.No)
                 {
-                    DialogResult res9 = MessageBox.Show("Do you want to swap boxes ? ","Deal or no deal",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+                    pbMan.Visible = false;
+                    DialogResult res9 = MessageBox.Show("Do you want to swap boxes ? ", "Deal or no deal", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (res9 == DialogResult.Yes)
                     {
                         int oldBox = myBox;
@@ -598,6 +691,7 @@ namespace DealOrNoDeal
                         tbPlayerName.Visible = true;
                         Highscore = myBox;
                         brEndGame++;
+                        
 
                     }
                 }
@@ -712,46 +806,6 @@ namespace DealOrNoDeal
             lbRightSums.Items.Add(Sum25 + "  $");
             lbRightSums.Items.Add(Sum26 + "  $");
         }
-
-        private void UntilOffer()
-        {
-            
-
-        }
-
-        //Защо... 
-
-        int Sum1 = 1;
-        int Sum2 = 5;
-        int Sum3 = 10;
-        int Sum4 = 15;
-        int Sum5 = 25;
-        int Sum6 = 50;
-        int Sum7 = 75;
-        int Sum8 = 100;
-        int Sum9 = 200;
-        int Sum10 = 300;
-        int Sum11 = 400;
-        int Sum12 = 500;
-        int Sum13 = 750;
-        int Sum14 = 1000;
-        int Sum15 = 5000;
-        int Sum16 = 10000;
-        int Sum17 = 25000;
-        int Sum18 = 50000;
-        int Sum19 = 75000;
-        int Sum20 = 100000;
-        int Sum21 = 200000;
-        int Sum22 = 300000;
-        int Sum23 = 400000;
-        int Sum24 = 500000;
-        int Sum25 = 750000;
-        int Sum26 = 1000000;
-        
-
-
-        // Метод за банкер(не много сполучлив, но работи!).
-
 
         private void DistributingBoxes()
         {
@@ -1226,12 +1280,6 @@ namespace DealOrNoDeal
             }
         }
 
-        //Пълнене на кутиите спрямо случайно генерираните суми за всяка една.
-
-       
-
-        // Метод за премахване на вече отворените кутии, от сметките на банкер и листовете встрани.
-
         private void MethodForRemovingSumsFromList()
         {
             switch (arrGeneratedNubmers[BoxIndicator])
@@ -1369,7 +1417,7 @@ namespace DealOrNoDeal
             }
         }
 
-        //Връща стойностите в оригинален вид след зануляването,заради банкера.
+       
 
         private void SumRestoring()
         {
@@ -1401,52 +1449,6 @@ namespace DealOrNoDeal
             Sum26 = 1000000;
         }
 
-        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            DialogResult res = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (res == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
-        }
-
-        private void aboutMeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AboutMeForm aboutme = new AboutMeForm();
-            aboutme.ShowDialog();
-
-        }
-
-        private void checkHighscoresToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            HighscoreForm highscore = new HighscoreForm();
-            highscore.ShowDialog();
-        }
-
-        private void btnSubmitScore_Click(object sender, EventArgs e)
-        {
-            if (tbPlayerName.Text.Trim()!="")
-            {
-                Player = tbPlayerName.Text;
-                
-               // tbPlayerName.Text = "";
-                using (FileStream fs = new FileStream(filePath,FileMode.Append))
-                {
-                    using (StreamWriter sw = new StreamWriter(fs))
-                    {
-                        sw.WriteLine(Highscore.ToString() + "$" + "  <->  " + Player );
-                        
-                    }
-                }
-                tbPlayerName.Visible = false;
-                btnSubmitScore.Visible = false;
-
-            }
-            else
-            {
-                MessageBox.Show("Enter your name!");
-            }
-        }
+        
     }
 }

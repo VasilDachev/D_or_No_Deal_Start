@@ -57,7 +57,6 @@
             this.btnBox16 = new System.Windows.Forms.Button();
             this.btnBox15 = new System.Windows.Forms.Button();
             this.btnBox14 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.lbLeftSums = new System.Windows.Forms.ListBox();
             this.lbRightSums = new System.Windows.Forms.ListBox();
             this.lblChoose = new System.Windows.Forms.Label();
@@ -77,44 +76,48 @@
             this.aboutMeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSubmitScore = new System.Windows.Forms.Button();
             this.tbPlayerName = new System.Windows.Forms.TextBox();
+            this.pbMan = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MainMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnStartGame
             // 
-            this.btnStartGame.BackColor = System.Drawing.Color.Green;
+            this.btnStartGame.BackColor = System.Drawing.Color.Chartreuse;
             this.btnStartGame.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnStartGame.Font = new System.Drawing.Font("Berlin Sans FB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStartGame.Location = new System.Drawing.Point(353, 118);
+            this.btnStartGame.Font = new System.Drawing.Font("Arial Black", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartGame.Location = new System.Drawing.Point(327, 166);
             this.btnStartGame.Name = "btnStartGame";
-            this.btnStartGame.Size = new System.Drawing.Size(374, 52);
+            this.btnStartGame.Size = new System.Drawing.Size(448, 52);
             this.btnStartGame.TabIndex = 0;
-            this.btnStartGame.Text = "Start";
+            this.btnStartGame.Text = "START";
             this.btnStartGame.UseVisualStyleBackColor = false;
             this.btnStartGame.Click += new System.EventHandler(this.btnStartGame_Click);
             // 
             // btnResetGame
             // 
-            this.btnResetGame.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnResetGame.BackColor = System.Drawing.Color.Tomato;
             this.btnResetGame.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnResetGame.Font = new System.Drawing.Font("Berlin Sans FB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResetGame.Font = new System.Drawing.Font("Arial Black", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetGame.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnResetGame.Location = new System.Drawing.Point(353, 118);
+            this.btnResetGame.Location = new System.Drawing.Point(327, 166);
             this.btnResetGame.Name = "btnResetGame";
-            this.btnResetGame.Size = new System.Drawing.Size(374, 52);
+            this.btnResetGame.Size = new System.Drawing.Size(448, 52);
             this.btnResetGame.TabIndex = 1;
-            this.btnResetGame.Text = "Reset";
+            this.btnResetGame.Text = "RESET";
             this.btnResetGame.UseVisualStyleBackColor = false;
             this.btnResetGame.Visible = false;
             this.btnResetGame.Click += new System.EventHandler(this.btnResetGame_Click);
             // 
             // btnBox1
             // 
-            this.btnBox1.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox1.BackColor = System.Drawing.Color.Tomato;
             this.btnBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox1.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox1.Location = new System.Drawing.Point(258, 190);
+            this.btnBox1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox1.Location = new System.Drawing.Point(270, 238);
             this.btnBox1.Name = "btnBox1";
             this.btnBox1.Size = new System.Drawing.Size(89, 83);
             this.btnBox1.TabIndex = 2;
@@ -125,11 +128,11 @@
             // 
             // btnBox2
             // 
-            this.btnBox2.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox2.BackColor = System.Drawing.Color.Tomato;
             this.btnBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox2.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox2.Location = new System.Drawing.Point(353, 190);
+            this.btnBox2.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox2.Location = new System.Drawing.Point(365, 238);
             this.btnBox2.Name = "btnBox2";
             this.btnBox2.Size = new System.Drawing.Size(89, 83);
             this.btnBox2.TabIndex = 3;
@@ -140,11 +143,11 @@
             // 
             // btnBox3
             // 
-            this.btnBox3.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox3.BackColor = System.Drawing.Color.Tomato;
             this.btnBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox3.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox3.Location = new System.Drawing.Point(448, 190);
+            this.btnBox3.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox3.Location = new System.Drawing.Point(460, 238);
             this.btnBox3.Name = "btnBox3";
             this.btnBox3.Size = new System.Drawing.Size(89, 83);
             this.btnBox3.TabIndex = 4;
@@ -155,11 +158,11 @@
             // 
             // btnBox4
             // 
-            this.btnBox4.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox4.BackColor = System.Drawing.Color.Tomato;
             this.btnBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox4.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox4.Location = new System.Drawing.Point(543, 190);
+            this.btnBox4.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox4.Location = new System.Drawing.Point(555, 238);
             this.btnBox4.Name = "btnBox4";
             this.btnBox4.Size = new System.Drawing.Size(89, 83);
             this.btnBox4.TabIndex = 5;
@@ -170,11 +173,11 @@
             // 
             // btnBox5
             // 
-            this.btnBox5.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox5.BackColor = System.Drawing.Color.Tomato;
             this.btnBox5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox5.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox5.Location = new System.Drawing.Point(638, 190);
+            this.btnBox5.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox5.Location = new System.Drawing.Point(650, 238);
             this.btnBox5.Name = "btnBox5";
             this.btnBox5.Size = new System.Drawing.Size(89, 83);
             this.btnBox5.TabIndex = 6;
@@ -185,11 +188,11 @@
             // 
             // btnBox6
             // 
-            this.btnBox6.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox6.BackColor = System.Drawing.Color.Tomato;
             this.btnBox6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox6.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox6.Location = new System.Drawing.Point(733, 190);
+            this.btnBox6.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox6.Location = new System.Drawing.Point(745, 238);
             this.btnBox6.Name = "btnBox6";
             this.btnBox6.Size = new System.Drawing.Size(89, 83);
             this.btnBox6.TabIndex = 7;
@@ -200,11 +203,11 @@
             // 
             // btnBox12
             // 
-            this.btnBox12.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox12.BackColor = System.Drawing.Color.Tomato;
             this.btnBox12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox12.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox12.Location = new System.Drawing.Point(688, 284);
+            this.btnBox12.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox12.Location = new System.Drawing.Point(700, 332);
             this.btnBox12.Name = "btnBox12";
             this.btnBox12.Size = new System.Drawing.Size(89, 83);
             this.btnBox12.TabIndex = 13;
@@ -215,11 +218,11 @@
             // 
             // btnBox11
             // 
-            this.btnBox11.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox11.BackColor = System.Drawing.Color.Tomato;
             this.btnBox11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox11.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox11.Location = new System.Drawing.Point(593, 284);
+            this.btnBox11.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox11.Location = new System.Drawing.Point(605, 332);
             this.btnBox11.Name = "btnBox11";
             this.btnBox11.Size = new System.Drawing.Size(89, 83);
             this.btnBox11.TabIndex = 12;
@@ -230,11 +233,11 @@
             // 
             // btnBox10
             // 
-            this.btnBox10.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox10.BackColor = System.Drawing.Color.Tomato;
             this.btnBox10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox10.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox10.Location = new System.Drawing.Point(498, 284);
+            this.btnBox10.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox10.Location = new System.Drawing.Point(510, 332);
             this.btnBox10.Name = "btnBox10";
             this.btnBox10.Size = new System.Drawing.Size(89, 83);
             this.btnBox10.TabIndex = 11;
@@ -245,11 +248,11 @@
             // 
             // btnBox9
             // 
-            this.btnBox9.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox9.BackColor = System.Drawing.Color.Tomato;
             this.btnBox9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox9.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox9.Location = new System.Drawing.Point(403, 284);
+            this.btnBox9.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox9.Location = new System.Drawing.Point(415, 332);
             this.btnBox9.Name = "btnBox9";
             this.btnBox9.Size = new System.Drawing.Size(89, 83);
             this.btnBox9.TabIndex = 10;
@@ -260,11 +263,11 @@
             // 
             // btnBox8
             // 
-            this.btnBox8.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox8.BackColor = System.Drawing.Color.Tomato;
             this.btnBox8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox8.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox8.Location = new System.Drawing.Point(308, 284);
+            this.btnBox8.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox8.Location = new System.Drawing.Point(320, 332);
             this.btnBox8.Name = "btnBox8";
             this.btnBox8.Size = new System.Drawing.Size(89, 83);
             this.btnBox8.TabIndex = 9;
@@ -275,11 +278,11 @@
             // 
             // btnBox7
             // 
-            this.btnBox7.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox7.BackColor = System.Drawing.Color.Tomato;
             this.btnBox7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox7.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox7.Location = new System.Drawing.Point(213, 284);
+            this.btnBox7.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox7.Location = new System.Drawing.Point(225, 332);
             this.btnBox7.Name = "btnBox7";
             this.btnBox7.Size = new System.Drawing.Size(89, 83);
             this.btnBox7.TabIndex = 8;
@@ -290,11 +293,11 @@
             // 
             // btnBox26
             // 
-            this.btnBox26.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox26.BackColor = System.Drawing.Color.Tomato;
             this.btnBox26.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox26.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox26.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox26.Location = new System.Drawing.Point(733, 472);
+            this.btnBox26.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox26.Location = new System.Drawing.Point(745, 520);
             this.btnBox26.Name = "btnBox26";
             this.btnBox26.Size = new System.Drawing.Size(89, 83);
             this.btnBox26.TabIndex = 25;
@@ -305,11 +308,11 @@
             // 
             // btnBox25
             // 
-            this.btnBox25.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox25.BackColor = System.Drawing.Color.Tomato;
             this.btnBox25.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox25.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox25.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox25.Location = new System.Drawing.Point(638, 472);
+            this.btnBox25.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox25.Location = new System.Drawing.Point(650, 520);
             this.btnBox25.Name = "btnBox25";
             this.btnBox25.Size = new System.Drawing.Size(89, 83);
             this.btnBox25.TabIndex = 24;
@@ -320,11 +323,11 @@
             // 
             // btnBox24
             // 
-            this.btnBox24.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox24.BackColor = System.Drawing.Color.Tomato;
             this.btnBox24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox24.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox24.Location = new System.Drawing.Point(543, 472);
+            this.btnBox24.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox24.Location = new System.Drawing.Point(555, 520);
             this.btnBox24.Name = "btnBox24";
             this.btnBox24.Size = new System.Drawing.Size(89, 83);
             this.btnBox24.TabIndex = 23;
@@ -335,11 +338,11 @@
             // 
             // btnBox23
             // 
-            this.btnBox23.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox23.BackColor = System.Drawing.Color.Tomato;
             this.btnBox23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox23.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox23.Location = new System.Drawing.Point(448, 472);
+            this.btnBox23.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox23.Location = new System.Drawing.Point(460, 520);
             this.btnBox23.Name = "btnBox23";
             this.btnBox23.Size = new System.Drawing.Size(89, 83);
             this.btnBox23.TabIndex = 22;
@@ -350,11 +353,11 @@
             // 
             // btnBox22
             // 
-            this.btnBox22.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox22.BackColor = System.Drawing.Color.Tomato;
             this.btnBox22.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox22.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox22.Location = new System.Drawing.Point(353, 472);
+            this.btnBox22.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox22.Location = new System.Drawing.Point(365, 520);
             this.btnBox22.Name = "btnBox22";
             this.btnBox22.Size = new System.Drawing.Size(89, 83);
             this.btnBox22.TabIndex = 21;
@@ -365,11 +368,11 @@
             // 
             // btnBox21
             // 
-            this.btnBox21.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox21.BackColor = System.Drawing.Color.Tomato;
             this.btnBox21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox21.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox21.Location = new System.Drawing.Point(258, 472);
+            this.btnBox21.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox21.Location = new System.Drawing.Point(270, 520);
             this.btnBox21.Name = "btnBox21";
             this.btnBox21.Size = new System.Drawing.Size(89, 83);
             this.btnBox21.TabIndex = 20;
@@ -380,11 +383,11 @@
             // 
             // btnBox13
             // 
-            this.btnBox13.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox13.BackColor = System.Drawing.Color.Tomato;
             this.btnBox13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox13.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox13.Location = new System.Drawing.Point(783, 284);
+            this.btnBox13.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox13.Location = new System.Drawing.Point(795, 332);
             this.btnBox13.Name = "btnBox13";
             this.btnBox13.Size = new System.Drawing.Size(89, 83);
             this.btnBox13.TabIndex = 26;
@@ -395,11 +398,11 @@
             // 
             // btnBox20
             // 
-            this.btnBox20.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox20.BackColor = System.Drawing.Color.Tomato;
             this.btnBox20.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox20.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox20.Location = new System.Drawing.Point(783, 378);
+            this.btnBox20.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox20.Location = new System.Drawing.Point(795, 426);
             this.btnBox20.Name = "btnBox20";
             this.btnBox20.Size = new System.Drawing.Size(89, 83);
             this.btnBox20.TabIndex = 33;
@@ -410,11 +413,11 @@
             // 
             // btnBox19
             // 
-            this.btnBox19.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox19.BackColor = System.Drawing.Color.Tomato;
             this.btnBox19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox19.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox19.Location = new System.Drawing.Point(688, 378);
+            this.btnBox19.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox19.Location = new System.Drawing.Point(700, 426);
             this.btnBox19.Name = "btnBox19";
             this.btnBox19.Size = new System.Drawing.Size(89, 83);
             this.btnBox19.TabIndex = 32;
@@ -425,11 +428,11 @@
             // 
             // btnBox18
             // 
-            this.btnBox18.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox18.BackColor = System.Drawing.Color.Tomato;
             this.btnBox18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox18.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox18.Location = new System.Drawing.Point(593, 378);
+            this.btnBox18.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox18.Location = new System.Drawing.Point(605, 426);
             this.btnBox18.Name = "btnBox18";
             this.btnBox18.Size = new System.Drawing.Size(89, 83);
             this.btnBox18.TabIndex = 31;
@@ -440,11 +443,11 @@
             // 
             // btnBox17
             // 
-            this.btnBox17.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox17.BackColor = System.Drawing.Color.Tomato;
             this.btnBox17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox17.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox17.Location = new System.Drawing.Point(498, 378);
+            this.btnBox17.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox17.Location = new System.Drawing.Point(510, 426);
             this.btnBox17.Name = "btnBox17";
             this.btnBox17.Size = new System.Drawing.Size(89, 83);
             this.btnBox17.TabIndex = 30;
@@ -455,11 +458,11 @@
             // 
             // btnBox16
             // 
-            this.btnBox16.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox16.BackColor = System.Drawing.Color.Tomato;
             this.btnBox16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox16.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox16.Location = new System.Drawing.Point(403, 378);
+            this.btnBox16.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox16.Location = new System.Drawing.Point(415, 426);
             this.btnBox16.Name = "btnBox16";
             this.btnBox16.Size = new System.Drawing.Size(89, 83);
             this.btnBox16.TabIndex = 29;
@@ -470,11 +473,11 @@
             // 
             // btnBox15
             // 
-            this.btnBox15.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox15.BackColor = System.Drawing.Color.Tomato;
             this.btnBox15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox15.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox15.Location = new System.Drawing.Point(308, 378);
+            this.btnBox15.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox15.Location = new System.Drawing.Point(320, 426);
             this.btnBox15.Name = "btnBox15";
             this.btnBox15.Size = new System.Drawing.Size(89, 83);
             this.btnBox15.TabIndex = 28;
@@ -485,11 +488,11 @@
             // 
             // btnBox14
             // 
-            this.btnBox14.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBox14.BackColor = System.Drawing.Color.Tomato;
             this.btnBox14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBox14.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBox14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBox14.Location = new System.Drawing.Point(213, 378);
+            this.btnBox14.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBox14.Location = new System.Drawing.Point(225, 426);
             this.btnBox14.Name = "btnBox14";
             this.btnBox14.Size = new System.Drawing.Size(89, 83);
             this.btnBox14.TabIndex = 27;
@@ -498,37 +501,26 @@
             this.btnBox14.Visible = false;
             this.btnBox14.Click += new System.EventHandler(this.btnBox14_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Berlin Sans FB Demi", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Info;
-            this.label1.Location = new System.Drawing.Point(313, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(454, 68);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "Deal or No Deal";
-            // 
             // lbLeftSums
             // 
-            this.lbLeftSums.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbLeftSums.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.lbLeftSums.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLeftSums.ForeColor = System.Drawing.SystemColors.Info;
+            this.lbLeftSums.ForeColor = System.Drawing.Color.Tomato;
             this.lbLeftSums.FormattingEnabled = true;
             this.lbLeftSums.ItemHeight = 30;
-            this.lbLeftSums.Location = new System.Drawing.Point(12, 161);
+            this.lbLeftSums.Location = new System.Drawing.Point(12, 209);
             this.lbLeftSums.Name = "lbLeftSums";
             this.lbLeftSums.Size = new System.Drawing.Size(163, 394);
             this.lbLeftSums.TabIndex = 35;
             // 
             // lbRightSums
             // 
-            this.lbRightSums.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbRightSums.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.lbRightSums.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbRightSums.ForeColor = System.Drawing.SystemColors.Info;
+            this.lbRightSums.ForeColor = System.Drawing.Color.Chartreuse;
             this.lbRightSums.FormattingEnabled = true;
             this.lbRightSums.ItemHeight = 30;
-            this.lbRightSums.Location = new System.Drawing.Point(908, 161);
+            this.lbRightSums.Location = new System.Drawing.Point(929, 209);
             this.lbRightSums.Name = "lbRightSums";
             this.lbRightSums.Size = new System.Drawing.Size(163, 394);
             this.lbRightSums.TabIndex = 36;
@@ -537,8 +529,8 @@
             // 
             this.lblChoose.AutoSize = true;
             this.lblChoose.Font = new System.Drawing.Font("Berlin Sans FB Demi", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChoose.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblChoose.Location = new System.Drawing.Point(643, 602);
+            this.lblChoose.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblChoose.Location = new System.Drawing.Point(655, 650);
             this.lblChoose.Name = "lblChoose";
             this.lblChoose.Size = new System.Drawing.Size(204, 27);
             this.lblChoose.TabIndex = 38;
@@ -548,7 +540,7 @@
             // tbChoseBox
             // 
             this.tbChoseBox.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tbChoseBox.Location = new System.Drawing.Point(869, 604);
+            this.tbChoseBox.Location = new System.Drawing.Point(881, 652);
             this.tbChoseBox.Name = "tbChoseBox";
             this.tbChoseBox.Size = new System.Drawing.Size(94, 22);
             this.tbChoseBox.TabIndex = 39;
@@ -556,11 +548,11 @@
             // 
             // btnChoose
             // 
-            this.btnChoose.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnChoose.BackColor = System.Drawing.Color.Tomato;
             this.btnChoose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnChoose.Font = new System.Drawing.Font("Berlin Sans FB Demi", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChoose.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnChoose.Location = new System.Drawing.Point(975, 604);
+            this.btnChoose.Location = new System.Drawing.Point(987, 652);
             this.btnChoose.Name = "btnChoose";
             this.btnChoose.Size = new System.Drawing.Size(75, 23);
             this.btnChoose.TabIndex = 40;
@@ -573,8 +565,8 @@
             // 
             this.lblYourBox.AutoSize = true;
             this.lblYourBox.Font = new System.Drawing.Font("Berlin Sans FB Demi", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYourBox.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblYourBox.Location = new System.Drawing.Point(794, 595);
+            this.lblYourBox.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblYourBox.Location = new System.Drawing.Point(806, 643);
             this.lblYourBox.Name = "lblYourBox";
             this.lblYourBox.Size = new System.Drawing.Size(137, 33);
             this.lblYourBox.TabIndex = 41;
@@ -585,8 +577,8 @@
             // 
             this.lblMyBox.AutoSize = true;
             this.lblMyBox.Font = new System.Drawing.Font("Berlin Sans FB Demi", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMyBox.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblMyBox.Location = new System.Drawing.Point(937, 595);
+            this.lblMyBox.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblMyBox.Location = new System.Drawing.Point(949, 643);
             this.lblMyBox.Name = "lblMyBox";
             this.lblMyBox.Size = new System.Drawing.Size(42, 33);
             this.lblMyBox.TabIndex = 42;
@@ -597,8 +589,8 @@
             // 
             this.lblBoxRange.AutoSize = true;
             this.lblBoxRange.Font = new System.Drawing.Font("Berlin Sans FB Demi", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBoxRange.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblBoxRange.Location = new System.Drawing.Point(892, 583);
+            this.lblBoxRange.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblBoxRange.Location = new System.Drawing.Point(904, 631);
             this.lblBoxRange.Name = "lblBoxRange";
             this.lblBoxRange.Size = new System.Drawing.Size(39, 19);
             this.lblBoxRange.TabIndex = 43;
@@ -617,8 +609,8 @@
             // 
             this.lblYouWon.AutoSize = true;
             this.lblYouWon.Font = new System.Drawing.Font("Berlin Sans FB Demi", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYouWon.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblYouWon.Location = new System.Drawing.Point(10, 595);
+            this.lblYouWon.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblYouWon.Location = new System.Drawing.Point(22, 643);
             this.lblYouWon.Name = "lblYouWon";
             this.lblYouWon.Size = new System.Drawing.Size(184, 33);
             this.lblYouWon.TabIndex = 45;
@@ -630,8 +622,8 @@
             // 
             this.lblWonSum.AutoSize = true;
             this.lblWonSum.Font = new System.Drawing.Font("Berlin Sans FB Demi", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWonSum.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblWonSum.Location = new System.Drawing.Point(200, 595);
+            this.lblWonSum.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblWonSum.Location = new System.Drawing.Point(212, 643);
             this.lblWonSum.Name = "lblWonSum";
             this.lblWonSum.Size = new System.Drawing.Size(29, 33);
             this.lblWonSum.TabIndex = 46;
@@ -642,8 +634,8 @@
             // 
             this.lblSwappedyours.AutoSize = true;
             this.lblSwappedyours.Font = new System.Drawing.Font("Berlin Sans FB Demi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSwappedyours.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblSwappedyours.Location = new System.Drawing.Point(796, 118);
+            this.lblSwappedyours.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblSwappedyours.Location = new System.Drawing.Point(819, 166);
             this.lblSwappedyours.Name = "lblSwappedyours";
             this.lblSwappedyours.Size = new System.Drawing.Size(146, 24);
             this.lblSwappedyours.TabIndex = 47;
@@ -654,8 +646,8 @@
             // 
             this.lblswappedsum.AutoSize = true;
             this.lblswappedsum.Font = new System.Drawing.Font("Berlin Sans FB Demi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblswappedsum.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblswappedsum.Location = new System.Drawing.Point(949, 118);
+            this.lblswappedsum.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblswappedsum.Location = new System.Drawing.Point(974, 166);
             this.lblswappedsum.Name = "lblswappedsum";
             this.lblswappedsum.Size = new System.Drawing.Size(16, 24);
             this.lblswappedsum.TabIndex = 48;
@@ -664,13 +656,13 @@
             // 
             // MainMenu
             // 
-            this.MainMenu.BackColor = System.Drawing.Color.OrangeRed;
+            this.MainMenu.BackColor = System.Drawing.Color.Chartreuse;
             this.MainMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.MainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem});
             this.MainMenu.Location = new System.Drawing.Point(0, 0);
             this.MainMenu.Name = "MainMenu";
-            this.MainMenu.Size = new System.Drawing.Size(1079, 26);
+            this.MainMenu.Size = new System.Drawing.Size(1104, 26);
             this.MainMenu.TabIndex = 49;
             this.MainMenu.Text = "menuStrip1";
             // 
@@ -701,13 +693,13 @@
             // 
             // btnSubmitScore
             // 
-            this.btnSubmitScore.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnSubmitScore.BackColor = System.Drawing.Color.Chartreuse;
             this.btnSubmitScore.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSubmitScore.Font = new System.Drawing.Font("Berlin Sans FB Demi", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmitScore.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnSubmitScore.Location = new System.Drawing.Point(472, 569);
+            this.btnSubmitScore.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmitScore.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSubmitScore.Location = new System.Drawing.Point(474, 618);
             this.btnSubmitScore.Name = "btnSubmitScore";
-            this.btnSubmitScore.Size = new System.Drawing.Size(136, 57);
+            this.btnSubmitScore.Size = new System.Drawing.Size(160, 57);
             this.btnSubmitScore.TabIndex = 50;
             this.btnSubmitScore.Text = "Submit Score";
             this.btnSubmitScore.UseVisualStyleBackColor = false;
@@ -716,18 +708,40 @@
             // 
             // tbPlayerName
             // 
-            this.tbPlayerName.Location = new System.Drawing.Point(472, 541);
+            this.tbPlayerName.Location = new System.Drawing.Point(486, 589);
             this.tbPlayerName.Name = "tbPlayerName";
             this.tbPlayerName.Size = new System.Drawing.Size(136, 22);
             this.tbPlayerName.TabIndex = 51;
             this.tbPlayerName.Visible = false;
             // 
+            // pbMan
+            // 
+            this.pbMan.Image = global::DealOrNoDeal.Properties.Resources.Deal_or_No_Deal;
+            this.pbMan.Location = new System.Drawing.Point(0, 29);
+            this.pbMan.Name = "pbMan";
+            this.pbMan.Size = new System.Drawing.Size(1106, 665);
+            this.pbMan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMan.TabIndex = 53;
+            this.pbMan.TabStop = false;
+            this.pbMan.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DealOrNoDeal.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(243, -17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(616, 221);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 52;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1079, 640);
+            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.ClientSize = new System.Drawing.Size(1104, 692);
+            this.Controls.Add(this.pbMan);
             this.Controls.Add(this.tbPlayerName);
             this.Controls.Add(this.btnSubmitScore);
             this.Controls.Add(this.lblswappedsum);
@@ -743,7 +757,6 @@
             this.Controls.Add(this.lblChoose);
             this.Controls.Add(this.lbRightSums);
             this.Controls.Add(this.lbLeftSums);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBox20);
             this.Controls.Add(this.btnBox19);
             this.Controls.Add(this.btnBox18);
@@ -770,9 +783,10 @@
             this.Controls.Add(this.btnBox3);
             this.Controls.Add(this.btnBox2);
             this.Controls.Add(this.btnBox1);
-            this.Controls.Add(this.btnResetGame);
             this.Controls.Add(this.btnStartGame);
             this.Controls.Add(this.MainMenu);
+            this.Controls.Add(this.btnResetGame);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
@@ -780,6 +794,8 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.MainMenu.ResumeLayout(false);
             this.MainMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -815,7 +831,6 @@
         private System.Windows.Forms.Button btnBox16;
         private System.Windows.Forms.Button btnBox15;
         private System.Windows.Forms.Button btnBox14;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox lbLeftSums;
         private System.Windows.Forms.ListBox lbRightSums;
         private System.Windows.Forms.Label lblChoose;
@@ -835,6 +850,8 @@
         private System.Windows.Forms.ToolStripMenuItem aboutMeToolStripMenuItem;
         private System.Windows.Forms.Button btnSubmitScore;
         private System.Windows.Forms.TextBox tbPlayerName;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbMan;
     }
 }
 

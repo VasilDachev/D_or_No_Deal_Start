@@ -63,6 +63,26 @@ namespace DealOrNoDeal.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _105420693_1537974680152howie_mandel1 {
+            get {
+                object obj = ResourceManager.GetObject("105420693-1537974680152howie-mandel1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Deal_or_No_Deal {
+            get {
+                object obj = ResourceManager.GetObject("Deal-or-No-Deal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap deal_or_no_deal_logo_png {
             get {
                 object obj = ResourceManager.GetObject("deal-or-no-deal-logo-png", resourceCulture);
@@ -86,6 +106,16 @@ namespace DealOrNoDeal.Properties {
         internal static System.Drawing.Bitmap iconfinder_074_ArchieveBox_183203 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_074_ArchieveBox_183203", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo {
+            get {
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
